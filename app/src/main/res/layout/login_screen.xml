@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".LoginScreen">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/money_icon"
+        app:layout_constraintBottom_toTopOf="@+id/user"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColorHint="@color/contorno"
+        app:helperText="User Name"
+        app:helperTextTextColor="@color/contorno"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese Usuario"
+            android:singleLine="true"
+            android:textColor="@color/contorno">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColorHint="@color/contorno"
+        app:helperTextTextColor="@color/contorno"
+        app:layout_constraintTop_toBottomOf="@+id/user"
+        app:helperText="Ingrese PIN">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese PIN"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColorHint="@color/contorno"
+            android:textColor="@color/contorno">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Login"
+        android:backgroundTint="@color/contorno"
+        android:textColor="@color/fondo"
+        app:layout_constraintTop_toBottomOf="@+id/password">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
