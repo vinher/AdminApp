@@ -3,6 +3,15 @@
     <style name="Base.Theme.AdminApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="primaryActivityName">#E5C3A6</item>
+        <item name="colorPrimary">#E5C3A6</item>
+        <item name="colorAccent">#E5C3A6</item>
+        <item name="colorControlNormal">#E5C3A6</item>
+        <item name="colorControlActivated">#E5C3A6</item>
+        <item name="colorControlHighlight">#E5C3A6</item>
+    </style>
+    <style name="color_outline">
+
     </style>
 
     <style name="Theme.AdminApp" parent="Base.Theme.AdminApp" />

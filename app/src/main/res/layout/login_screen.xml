@@ -21,12 +21,14 @@
         android:layout_margin="16dp"
         android:textColorHint="@color/contorno"
         app:helperText="User Name"
+        style="@style/color_outline"
         app:helperTextTextColor="@color/contorno"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:hint="Ingrese Usuario"
             android:singleLine="true"
             android:textColor="@color/contorno">
