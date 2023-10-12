@@ -1,42 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo"
-    tools:context=".LoginScreen">
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/screen_register"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-    </androidx.fragment.app.FragmentContainerView>
-
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/home"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-    </androidx.fragment.app.FragmentContainerView>
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".user_register">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/mainScreen">
+        android:layout_height="match_parent">
         <ImageView
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:importantForAccessibility="no"
-        android:src="@drawable/money_icon"
+        android:src="@drawable/edit_note"
         app:layout_constraintBottom_toTopOf="@+id/user"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:textColorHint="@color/contorno"
-        app:helperText="User Name"
+        app:helperText="Ingrese El Nombre DE Usuario A Registrar"
         style="@style/color_outline"
         app:helperTextTextColor="@color/contorno"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,8 +30,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:hint="Ingrese Usuario"
+            android:hint="Ej. Kevin"
             android:singleLine="true"
             android:textColor="@color/contorno">
         </com.google.android.material.textfield.TextInputEditText>
@@ -70,12 +45,12 @@
         android:textColorHint="@color/contorno"
         app:helperTextTextColor="@color/contorno"
         app:layout_constraintTop_toBottomOf="@+id/user"
-        app:helperText="Ingrese PIN">
+        app:helperText="Ingrese PIN Con el que iniciara sesión">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ingrese PIN"
+            android:hint="Ej. 9854"
             android:inputType="number"
             android:singleLine="true"
             android:textColorHint="@color/contorno"
@@ -89,27 +64,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Login"
+        android:text="Registrar"
         android:backgroundTint="@color/contorno"
         android:textColor="@color/fondo"
         app:layout_constraintTop_toBottomOf="@+id/password">
 
     </Button>
-    <TextView
-        android:id="@+id/register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registrarse"
-        android:textColor="@color/contorno"
-        android:textSize="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/login"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="8dp">
 
-    </TextView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
